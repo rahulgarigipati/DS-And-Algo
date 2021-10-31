@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(void) {
+
+int matrix_1[3][2]={
+    {1,2},
+    {4,5},
+     {7,8}};
+int matrix_2[2][3]={
+    {3,2,1},
+{6,5,4}};
+int res[3][3]={
+    {0,0,0},
+    {0,0,0},
+    {0,0,0},};
+for(int i=0;i<3;i++){
+        for(int j=0; j<3; j++){
+            for(int k=0;k<2;k++){
+                res[i][j]+=matrix_1[i][k]*matrix_2[k][j];}
+        }}
+for(int i=0;i<3;i++){ for(int j=0; j<3; j++){ printf("%02d",res[i][j]);
+}printf("\n"); }
+
+return 0;
+        }
