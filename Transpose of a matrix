@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(void){
+int row, col;
+printf("Enter the size of matrix");
+scanf("%d %d",&row,&col);
+int nums[row][col];
+for(int i=0;i<row; i++){
+        for(int j=0; j<col; j++){
+            scanf("%d",&nums[i][j]);
+        }}
+printf("Original Matrix: \n");
+for(int i=0;i<row; i++){
+        for(int j=0; j<col; j++){
+            printf("%d",nums[i][j]); }
+printf("\n"); }
+printf("\n");
+printf("Matrix Transpose: \n");
+for(int i=0;i<row; i++){
+        for (int j=0; j<col; j++){
+            printf("%d", nums[j][i]);
+}printf("\n");
+}
+return 0;
+}
