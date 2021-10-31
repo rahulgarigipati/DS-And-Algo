@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(void){
+int nums[10]={200 , 5000 , 2000 , 34 , 1000 , 500 ,45 ,100 ,10 ,1 },temp;
+printf("values in Array are\n");
+for(int i=0;i<10; i++){
+        printf("%d",nums[i]);
+        }
+for(int i=0;i<10; i++){
+        for(int j=i+1;j<10; j++){
+                if(nums[i]>nums [j]){ temp=nums[j]; nums[j]=nums[i]; nums[i]=temp;
+}
+}
+}
+printf("\n");
+printf("values after Sorting\n");
+for(int i=0;i<10; i++){
+        printf("%d ",nums[i]);
+}
+return 0;
+}
